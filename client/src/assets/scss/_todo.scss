@@ -1,0 +1,121 @@
+.todo{
+  width: 100%;
+  position: relative;
+  border-bottom: solid 1px black;
+  padding: 1rem 0;
+  h3{
+    font-size: 3rem;
+  }
+  h4{
+    font-size: 2rem;
+  }
+  .todoTitle,.todoCategory {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .todoTitle:hover, .todoCategory:hover {
+    cursor: pointer;
+    color: blue;
+  }
+
+  button{
+    position: absolute;
+    right: 0;
+    border-radius: 15px;
+    top: calc(50% - 2.5rem);
+    border: none;
+    font-size: 2rem;
+    padding: 0.5em;
+    color: white;
+    background-color: rgb(156, 55, 55);
+    justify-content: center;
+    align-items: center;
+  } 
+  button:hover{
+    background-color: rgb(82, 29, 29);
+  }
+  
+}
+
+
+.categoryContainer {
+  h1{
+    font-size: 5rem;
+  }
+  .backButton {
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5em;
+    margin-bottom: 1rem;
+  }
+  .backButton:hover{
+    cursor: pointer;
+  }
+}
+
+
+.todoViewContainer{
+
+  padding: 5rem 10rem;
+
+
+  .backButton {
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5em;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  }
+  .backButton:hover{
+    cursor: pointer;
+  }
+  position: relative;
+  h1 {
+    font-size: 6rem;
+  }
+  h2{
+    font-size: 3.5rem;
+  }
+  h3{
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .todoCategory {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .todoCategory:hover {
+    cursor: pointer;
+    color: blue;
+  }
+}
+
+
+
+.sendbutton{
+
+  position: absolute;
+
+  border-radius: 15px;
+  margin-right: 18%;
+  top: calc(50% - 2.5rem);
+  border: none;
+  font-size: 2rem;
+  padding: 0.5em;
+  color: white;
+  background-color: rgb(156, 55, 55);
+  justify-content: center;
+  align-items: center;
+
+  sendbutton:hover{
+    background-color: rgb(82, 29, 29);
+  }
+}

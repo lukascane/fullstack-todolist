@@ -1,0 +1,36 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './reset';
+@import './body';
+@import './form';
+@import './notFound';
+@import './todo';
+
+.mainContainer{
+  
+  width: 80%;
+  margin: 10rem auto 0 auto; 
+  background-color: rgba(255, 255, 255, 0.753);
+  padding: 5rem 0;
+  border-radius: 5rem;
+  min-height: 700px;
+}
+
+.landingContainer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.formCol {
+  grid-column: 1 / 2;
+  border-right: solid 3px rgb(0, 0, 0);
+}
+
+.todoCol {
+  padding: 5rem;
+  grid-column: 2 / 3;
+}
+
+.categoryContainer {
+  padding: 5rem 10rem;
+}
+
