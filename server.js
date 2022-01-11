@@ -27,5 +27,5 @@ mongoose
     .then(() => console.log('We are connected to the database'))
     .catch(() => console.log('We are not connected to the database'));
 
-
-app.listen(4000, () => console.log('Server is ready for requests.'));
+const port = process.env.PORT || 4000
+app.listen(port, () => console.log('Server is ready for requests.'));
