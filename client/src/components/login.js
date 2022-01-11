@@ -22,7 +22,8 @@ function Login() {
       } 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+     <h1>Login</h1>
+      <form onSubmit={handleSubmit} >
         <div className="container fs-4 pt-4">
           <div className="form-group mb-3">
             <label >Username</label>
@@ -47,7 +48,7 @@ function Login() {
           </div>
         </div>
 
-        <button type="submit" className="btn btn-outline-primary">
+        <button type="submit" size="lg" className="btn-lg btn-outline-primary text-center" >
           Submit
         </button>
       </form>

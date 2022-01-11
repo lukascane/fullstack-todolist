@@ -8,7 +8,7 @@ import TodoView from '../views/TodoView/TodoView';
 import Register from '../components/register';
 import Login from '../components/login';
 import About from '../components/about';
-
+import Footer from '../components/Footer';
 export const AppContext = createContext({
   username: "",
   loggedIn: false,
@@ -45,7 +45,8 @@ const [username, setUsername ]= useState("")
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
-      </TodoProvider>    
+      </TodoProvider>  
+      <Footer />
     </BrowserRouter>
     </AppContext.Provider>
   )

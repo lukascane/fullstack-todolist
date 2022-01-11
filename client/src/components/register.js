@@ -28,7 +28,7 @@ catch(error){console.log("error", error);}
   return (
     <div className=' body' >
     <h1>Register</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} >
         <div className="container fs-4 pt-4">
           <div className="form-group mb-3">
             <label >Username</label>
@@ -65,7 +65,7 @@ catch(error){console.log("error", error);}
           </div>
         </div>
 
-        <button type="submit" className="btn btn-outline-primary text-center ">
+        <button type="submit" className="btn-lg btn-outline-primary text-center">
           Submit
         </button>
       </form>
