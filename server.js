@@ -10,7 +10,13 @@ const cookieParser = require ('cookie-parser')
 
 const app = express();
 
-
+const csp = require('express-csp-header');
+app.use(csp({
+    policies: {
+        'default-src': [csp.NONE],
+        'img-src': [csp.SELF],
+    }
+}));
 dotenv.config();
 app.use(express.json());
 app.use(
