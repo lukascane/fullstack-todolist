@@ -1,8 +1,10 @@
 .todo{
-  width: 100%;
+  /* width: 100%; */
   position: relative;
   border-bottom: solid 1px black;
   padding: 1rem 0;
+  min-width: 400px;
+  display: block;
   h3{
     font-size: 3rem;
   }

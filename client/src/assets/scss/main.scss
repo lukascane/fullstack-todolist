@@ -8,7 +8,7 @@
 
 .mainContainer{
   
-  width: 80%;
+  width: 80%; 
   margin: 10rem auto 0 auto; 
   background-color: rgba(255, 255, 255, 0.753);
   padding: 5rem 0;
@@ -23,11 +23,12 @@
 
 .formCol {
   grid-column: 1 / 2;
-  border-right: solid 3px rgb(0, 0, 0);
+  border-right: solid 3px rgb(182, 54, 54);
 }
 
 .todoCol {
-  padding: 5rem;
+  padding: 5rem; 
+
   grid-column: 2 / 3;
 }
 
@@ -35,3 +36,24 @@
   padding: 5rem 10rem;
 }
 
+
+@media (max-width: 768px) { 
+
+  .landingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  .formCol {
+    border-right: 0px;
+  }
+
+  .todoCol {
+    /* padding: 5rem; */
+  
+    grid-column: 2 / 2;
+  }
+ }
+
+ 

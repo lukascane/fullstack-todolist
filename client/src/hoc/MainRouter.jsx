@@ -29,7 +29,7 @@ const [username, setUsername ]= useState("")
     <AppContext.Provider value={{username,handleLogin}}>
     <BrowserRouter>
       <TodoProvider>
-        <main className="mainContainer" >
+        <main className="mainContainer container" >
           <Routes>
             <Route path="/landing" element={<Landing />} />
             <Route path="/" element={<Register />} />
