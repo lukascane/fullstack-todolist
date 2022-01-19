@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "Fullstack, todolist-project ",
   "main": "index.js",
-  "scripts": {
-    "start": "react-scripts start"
+  "engines": {
+    "node": "v14.17.0",
+    "npm": "8.1.0"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+   },
   "author": "",
   "license": "ISC",
   "dependencies": {
