@@ -4,7 +4,7 @@
   "description": "Fullstack, todolist-project ",
   "main": "index.js",
   "engines": {
-    "node": "v14.17.0",
+    "node": "14.17.0",
     "npm": "8.1.0"
   },
   "scripts": {
