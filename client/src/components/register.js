@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import axios from 'axios';
 import { AppContext } from '../hoc/MainRouter';
-
 import { useNavigate } from 'react-router-dom';
 import { handle } from 'express/lib/application';
 
@@ -19,7 +18,7 @@ function Register() {
     };
     
 try {
-  const response = await axios.post('http://localhost:4000/user/register', data)
+  const response = await axios.post('http://localhost:4000/user/register', data, {withCredentials: true})
   console.log(response);
   if (response.status === 200) {navigate('/login')}
 }

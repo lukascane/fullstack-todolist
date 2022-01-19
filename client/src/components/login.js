@@ -14,7 +14,8 @@ function Login() {
       password: formData.get("password"),
     };
     try {
-      const response = await axios.post('http://localhost:4000/user/register', data)
+
+      const response = await axios.post('http://localhost:4000/user/register', data, {withCredentials: true})
       console.log(response);
       if (response.status === 200) {navigate('/landing')}
     }
