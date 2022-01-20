@@ -9,9 +9,9 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "dev": "react-scripts start",
-    "heroku-postbuild": "npm run build",
-    "start": "serve -s build"
+    "start": "react-scripts start",
+    "heroku-postbuild": "npm run build"
+    
 },
   "author": "",
   "license": "ISC",
