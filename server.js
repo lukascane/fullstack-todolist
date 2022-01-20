@@ -7,8 +7,10 @@ const userToDo = require ('./Routes/userToDo');
 const passport = require ('passport');
 const JWTConfig = require ('./passport');
 const cookieParser = require ('cookie-parser')
+const path = require("path");
 
 const app = express();
+
 
 
 
@@ -34,4 +36,11 @@ mongoose
     .catch(() => console.log('We are not connected to the database'));
 
 const port = process.env.PORT || 4000
+app.use(express.static(path.join(__dirname, 'client', 'build')));
+
+app.get("*", (req, res) => {
+  //res.sendFile(path.join(__dirname + "/client/build/index.html"));
+  res.sendFile(path.join(__dirname, 'client','build', "index.html"));
+
+});
 app.listen(port, () => console.log('Server is ready for requests.'));
