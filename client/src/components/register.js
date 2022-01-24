@@ -18,7 +18,8 @@ function Register() {
     };
     
 try {
-  const API = process.env.NODE_ENV === 'production' ? 'https://todolist-v2-lukas-cane.herokuapp.com/register' : 'http://localhost:4000/user/register';
+  const API = process.env.NODE_ENV === 'production' ? 
+  `https://todolist-v2-lukas-cane.herokuapp.com/user/register` : `http://localhost:4000/user/register`;
   const response = await axios.post(API, data, {withCredentials: true})
   console.log(response);
   if (response.status === 200) {navigate('/login')}

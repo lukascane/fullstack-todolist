@@ -14,7 +14,7 @@ function Login() {
       password: formData.get("password"),
     };
     try {
-      const API = process.env.NODE_ENV === 'production' ? 'https://todolist-v2-lukas-cane.herokuapp.com/login' : 'http://localhost:4000/user/login';
+      const API = process.env.NODE_ENV === 'production' ? `https://todolist-v2-lukas-cane.herokuapp.com/user/login` : `http://localhost:4000/user/login`;
       const response = await axios.post(
         API, data, {withCredentials: true})
       console.log(response);
