@@ -26,7 +26,7 @@ router.post("/register", async (req, res) => {
     
 });
 router.post ("/login", async (req, res) => {
-    const { email, password } = req.body;
+    const { username, password } = req.body;
 
   try {
     // guard that password exists 💂
@@ -37,7 +37,7 @@ router.post ("/login", async (req, res) => {
 
     // 1. Find the user
     // find (array of documents) vs. findOne (one document) ?
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ username });
 
     // if user === null, there is no user
     // guard that the user exists 💂
